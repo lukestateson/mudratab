@@ -1,0 +1,121 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html, body {
+	height: 100%;
+}
+
+body {
+	font-size: 24px;
+	font-family: Montserrat, sans-serif;
+}
+
+body.night {
+	background: #000;
+	color: #fff;
+}
+
+body.night button {
+	color: #fff;
+}
+
+body.night a {
+	color: #fff;
+}
+
+body.night .curr {
+	background: #111;
+}
+
+span {
+	cursor: pointer;
+	line-height: 1;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+	line-height: 1;
+}
+
+.date-wrap {
+	position: absolute;
+	top: 50px;
+	right: 50px;
+	text-align: right;
+}
+
+	#line2 {
+		opacity: 0.7;
+	}
+
+	#line1 {
+		font-size: 64px;
+		opacity: 0.9;
+	}
+
+.calendar-wrap {
+	margin-top: 10px;
+	display: flex;
+	justify-content: flex-end;
+	align-content: flex-end;
+	flex-wrap: wrap;
+	flex-direction: column;
+	position: absolute;
+	bottom: 50px;
+	right: 39px;
+	opacity: 0.7;
+}
+
+	.calhead, .calendar {
+		display: flex;
+		flex-wrap: wrap;
+		font-size: 14px;
+		flex: 0 0 100%;
+		max-width: calc(44px * 7);
+		text-align: center;
+	}
+	.calhead {
+		border-radius: 6px 6px 0 0;
+		font-weight: 600;
+	}
+	.calendar {
+		border-radius: 0 0 6px 6px;
+	}
+	.calhead div, .calendar div {
+		padding-top: 12px;
+		padding-bottom: 12px;
+		width: 44px;
+	}
+
+	.curr {
+		background: #f3f3f3;
+		font-weight: 600;
+		border-radius: 60px;
+	}
+
+.switchnight {
+	position: fixed;
+	top: 50px;
+	left: 50px;
+}
+
+body.showauthor .authorbutton {
+	display: block;
+}
+
+.authorbutton {
+	display: none;
+	position: fixed;
+	bottom: 50px;
+	left: 50px;
+	font-size: 15px;
+	opacity: 0.5;
+}
+
+.authorbutton span {
+	margin-left: 10px;
+}
+
+.switchnight:before {
+	content: '☼';
+}
