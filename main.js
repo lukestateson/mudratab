@@ -86,7 +86,7 @@ function get_date() {
 			cal = cal + `<div>${i}</div>`;
 		}
 	}
-	document.getElementsByClassName("calendar")[0].innerHTML = `${cal}`;
+	//document.getElementsByClassName("calendar")[0].innerHTML = `${cal}`;
 
 	var calhead = '';
 	for (var i = 0; i < days3.length; i++) {
